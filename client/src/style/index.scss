@@ -1,0 +1,27 @@
+.allMisuc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 5%;
+    
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 360px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.audioEl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.playingSong {
+    box-shadow: 0px 0px  5px 7px grey;
+}
