@@ -1,6 +1,6 @@
 import AudioEl from "./AudioEl";
-import { allMusic } from "./data/data";
-import './style/index.scss'
+import { allMusic } from "../../data/data";
+import '../../style/index.scss'
 
 function App() {
   return (
