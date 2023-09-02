@@ -51,7 +51,6 @@ const AudioEl = ({ song }: AudioElProps) => {
                 audioDuration={audioDuration}
                 setTrackProgress={setTrackProgress}
             />
-            {/* <input type="range" value={trackProgress} step="0.5" min="0" max={audioDuration} onChange={handleScrubMusic} /> */}
             <input type="range" value={audioVolume} step="0.001" min="0" max="1" onChange={handleVolumeMusic} />
             <input type="range" value={audioSpeed} step="0.25" min="0" max="4" onChange={handleSpeedMusic} />
         </div >

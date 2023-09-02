@@ -1,1 +1,0 @@
-                setTrackProgress(audio.currentTime)
