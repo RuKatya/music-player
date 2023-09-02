@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { Music } from '../../data/data'
 import Controllers from '../Components/AudioControllers/Controllers';
 import ProgressTrack from '../Components/AudioControllers/ProgressTrack';
+import Volume from '../Components/AudioControllers/Volume';
 
 /*
     download the created file?
@@ -21,15 +22,15 @@ const AudioEl = ({ song }: AudioElProps) => {
     const [trackProgress, setTrackProgress] = useState<number>(0);
     const [audioDuration, setAudioDuration] = useState<number>(0)
     const [audioSpeed, setAudioSpeed] = useState<number>(1)
-    const [audioVolume, setAudioVolume] = useState<number>(1)
+    // const [audioVolume, setAudioVolume] = useState<number>(1)
     const [isPlaying, setIsPlaying] = useState<boolean>(false)
 
 
 
-    const handleVolumeMusic = (event: any) => {
-        audioRef.current.volume = event.target.value;
-        setAudioVolume(audioRef.current.volume);
-    }
+    // const handleVolumeMusic = (event: any) => {
+    //     audioRef.current.volume = event.target.value;
+    //     setAudioVolume(audioRef.current.volume);
+    // }
 
     const handleSpeedMusic = (event: any) => {
         audioRef.current.playbackRate = event.target.value;
@@ -51,7 +52,9 @@ const AudioEl = ({ song }: AudioElProps) => {
                 audioDuration={audioDuration}
                 setTrackProgress={setTrackProgress}
             />
-            <input type="range" value={audioVolume} step="0.001" min="0" max="1" onChange={handleVolumeMusic} />
+            <Volume
+                audio={audioRef.current}
+            />
             <input type="range" value={audioSpeed} step="0.25" min="0" max="4" onChange={handleSpeedMusic} />
         </div >
     )
