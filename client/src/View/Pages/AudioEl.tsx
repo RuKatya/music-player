@@ -9,9 +9,6 @@ import MusicSpeed from '../Components/AudioControllers/MusicSpeed';
     download the created file?
     save
     record?
-    add headers to the item
-    src of the music in alt
-    дезаин
 */
 
 interface AudioElProps {
