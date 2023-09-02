@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.efe4dd0b.css",
+    "main.js": "/static/js/main.9d0b86b5.js",
+    "static/media/XtremeFreddy.mp3": "/static/media/XtremeFreddy.45b6eb5e231682a1d39a.mp3",
+    "static/media/BLACKBOX.mp3": "/static/media/BLACKBOX.eb3d0b4b34de43814c7e.mp3",
+    "static/media/Soundmusicgmb.mp3": "/static/media/Soundmusicgmb.e4ddce6e3083bb5f683f.mp3",
+    "static/media/BLACKBOX1.mp3": "/static/media/BLACKBOX1.bd00003bf809039f0d8e.mp3",
+    "static/media/Pixabay1.mp3": "/static/media/Pixabay1.cc563b4a7c501f5841bd.mp3",
+    "static/media/UNIVERSFIELD.mp3": "/static/media/UNIVERSFIELD.0515f3f6ba32c4570ae1.mp3",
+    "static/media/Pixabay.mp3": "/static/media/Pixabay.1402107614d1eb6928e9.mp3",
+    "static/media/Alex_Kizenkov1.mp3": "/static/media/Alex_Kizenkov1.cfa00096967cffaf12c6.mp3",
+    "static/media/Pixabay2.mp3": "/static/media/Pixabay2.86490bd02739f59acb79.mp3",
+    "static/media/Alex_Kizenkov.mp3": "/static/media/Alex_Kizenkov.b440fa11c7200e063658.mp3",
+    "static/media/SergeQuadrado.mp3": "/static/media/SergeQuadrado.eb49ccee6d29da396e96.mp3",
+    "static/media/Pixabay4.mp3": "/static/media/Pixabay4.62af3c5fd002829dbd0e.mp3",
+    "static/media/Muzaproduction.mp3": "/static/media/Muzaproduction.79dc177fb03a9474e358.mp3",
+    "static/media/Pixabay3.mp3": "/static/media/Pixabay3.b522add43ec50fc4ae85.mp3",
+    "static/media/LiteSaturation.mp3": "/static/media/LiteSaturation.0efe4c18a9002d0c2a6c.mp3",
+    "static/media/SergeQuadrado1.mp3": "/static/media/SergeQuadrado1.0167f697a7f0a71790a8.mp3",
+    "index.html": "/index.html",
+    "main.efe4dd0b.css.map": "/static/css/main.efe4dd0b.css.map",
+    "main.9d0b86b5.js.map": "/static/js/main.9d0b86b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efe4dd0b.css",
+    "static/js/main.9d0b86b5.js"
+  ]
+}
