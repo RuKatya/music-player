@@ -1,10 +1,12 @@
-import React from 'react'
+import { useState } from 'react'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 import StopCircleOutlinedIcon from '@mui/icons-material/StopCircleOutlined';
 import ReplayOutlinedIcon from '@mui/icons-material/ReplayOutlined';
 
 const Controllers = ({ isPlaying, setIsPlaying, audio, setTrackProgress, setAudioDuration }: any) => {
+    const [isRepeat, setIsRepeat] = useState<boolean>(false)
+
     const startTimer = () => {
         setInterval(() => {
             if (audio.ended) {
@@ -29,6 +31,7 @@ const Controllers = ({ isPlaying, setIsPlaying, audio, setTrackProgress, setAudi
         audio.loop = false
         setIsPlaying(false)
         setTrackProgress(0)
+        setIsRepeat(false)
     }
 
     const handlePauseMusic = () => {
@@ -38,17 +41,22 @@ const Controllers = ({ isPlaying, setIsPlaying, audio, setTrackProgress, setAudi
     }
 
     const handleRepeatMusic = () => {
+        setIsRepeat(!isRepeat)
         if (audio.loop === true) return audio.loop = false
         audio.loop = true
     }
+
     return (
-        <div>
+        <div className='audio-controllers'>
             {isPlaying ?
-                <PauseCircleOutlineIcon onClick={handlePauseMusic} />
-                :
-                <PlayCircleOutlineIcon onClick={handlePlayMusic} />}
-            <StopCircleOutlinedIcon onClick={handleStopMusic} />
-            <ReplayOutlinedIcon onClick={handleRepeatMusic} />
+                <PauseCircleOutlineIcon onClick={handlePauseMusic} sx={{ fontSize: 50 }} /> :
+                <PlayCircleOutlineIcon onClick={handlePlayMusic} sx={{ fontSize: 50 }} />}
+            <StopCircleOutlinedIcon onClick={handleStopMusic} sx={{ fontSize: 50 }} />
+            <ReplayOutlinedIcon
+                onClick={handleRepeatMusic}
+                className={`${isRepeat ? "isRepeat" : null}`}
+                sx={{ fontSize: 50 }}
+            />
         </div>
     )
 }
